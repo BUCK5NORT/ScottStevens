@@ -1,11 +1,11 @@
-
-
-
-
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 1000px;
+}
 
 
 .hero {
-
+    margin-bottom: 20px;
 }
 
 .hero > div {
@@ -13,9 +13,21 @@
 }
 
 .tile {
-
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .tile > div {
+    
+}
+
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social > div {
     
 }
