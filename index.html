@@ -4,34 +4,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scott Stevens</title>
     <link rel="stylesheet" href="style.css">
-    <!--- Google Fonts --->
+    <link rel="stylesheet" href="header.css">
+<!--- Google Fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!--- FontAwesome Icons --->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto&display=swap" rel="stylesheet"> 
+<!---ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8a030c7bdf.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-
+<!-- HEADER -->
+<div class="name">
 <h1>SCOTT STEVENS</h1>
-<div class="hero">
-    <div><img src="/images/hero-tmobile.jpg" alt="baseball game at t-mobile park in seattle washington" width="1000"></div>
-    <div></div>
-    <div></div>
 </div>
 
+
+<div class="nav" id="myNav">
+    <a href="#">Projects</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+<!-- hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div> 
+<!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+    } 
+</script>
+
+<!-- PAGE CONTENT -->
 <div class="tile">
     <div>
-        <img src="/images/scott-presentation.jpg" alt="scott giving a presentation in front of a room full of people" width="300">
-        <p>WORK</p></div>
+        <img src="/images/scott-remus-hike.jpg" alt="scott and his dog resting after a hike" width="300">
+        <h3>Projects</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea beatae modi blanditiis quidem totam. Recusandae quos delectus quasi doloremque? Architecto, facere. Obcaecati iusto exercitationem in nulla ab modi quasi at.</p></div>
     <div>
         <img src="/images/scott-remus-hike.jpg" alt="scott and his dog resting after a hike" width="300">
-        <p>PLAY</p>
+        <h3>Training and Certifications</h3>
     </div>
     <div>
-        <img src="/images/family-beach.jpg" alt="scott and his family at the beach" width="300">
-        <p>FAMILY</p>
+        <img src="/images/scott-remus-hike.jpg" alt="scott and his dog resting after a hike" width="300">
+        <h3>Get in touch</h3>
     </div>
 </div>
 

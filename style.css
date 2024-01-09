@@ -1,33 +1,44 @@
 body {
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 25px;
+}
+
+.name {
     font-family: 'Roboto', sans-serif;
-    width: 1000px;
-}
-
-
-.hero {
-    margin-bottom: 20px;
-}
-
-.hero > div {
-    
+    float: left;
+    font-size: 30px;
 }
 
 .tile {
-    display: flex;
-    justify-content: space-between;
-    
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    clear: left;
 }
 
 .tile > div {
-    
+    padding: 15px;
+    background-color: grey;
 }
 
 
+/* media query for 600 px breakpoint for mobile menu | hide all links, except for the first one ("Home"). Show the link that opens the mobile menu (.icon) */
+@media screen and (max-width: 600px) {
+    .name {
+        font-size: 22px;
+    }
+}
+
+/* FOOTER */
 .social {
     display: flex;
     justify-content: space-around;
 }
 
 .social > div {
-    
+    margin-top: 50px;
 }
